@@ -6,6 +6,7 @@ import { initialState } from './reducer';
  */
 const selectTheme = state => state.theme || initialState;
 
+// Reselect not really necessary here but no harm.
 const makeSelectDarkMode = () =>
   createSelector(
     selectTheme,

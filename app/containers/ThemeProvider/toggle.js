@@ -6,6 +6,7 @@ import { makeSelectDarkMode } from './selectors';
 
 const Wrapper = styled.div``;
 
+// Probably shouldn't be called ConnectButton
 export default function ConnectButton() {
   const darkMode = useSelector(makeSelectDarkMode());
   const dispatch = useDispatch();

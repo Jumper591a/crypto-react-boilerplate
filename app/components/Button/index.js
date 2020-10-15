@@ -24,6 +24,8 @@ const Wrapper = styled.button`
   }
 `;
 
+// Should this be named just Button? As there is a separate ConnectButton component.
+// This one doesn't seem to be specific to Connecting.
 export default function ConnectButton(props) {
   const { onClick, disabled } = props;
   return (

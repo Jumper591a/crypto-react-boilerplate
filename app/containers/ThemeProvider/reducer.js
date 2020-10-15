@@ -25,6 +25,7 @@ export const initialState = {
 
 /* eslint-disable default-case, no-param-reassign */
 const languageProviderReducer = (state = initialState, action) =>
+  // Should this be called languageProviderReducer? Not ThemeProviderReducer?
   produce(state, draft => {
     switch (action.type) {
       case TOGGLE_DARK_MODE:
@@ -33,4 +34,5 @@ const languageProviderReducer = (state = initialState, action) =>
     }
   });
 
+// Should be ThemeProviderReducer?
 export default languageProviderReducer;

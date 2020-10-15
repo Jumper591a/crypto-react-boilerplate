@@ -1,3 +1,5 @@
+// Is it the plan to make these colors constants?
+
 const common = {
   yearnBlue: '#0151f0',
   white: '#fff',

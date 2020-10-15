@@ -1,6 +1,10 @@
 import { useContext } from 'react';
 import context from './context';
 
+// Just a thought, which may not be important, but by all the hooks sharing the same context object, it means whenever
+// any key of the context object changes, all components using any of these hooks will re-render.
+// Perhaps this context object won't be changing frequently so it wont matter too much, but just thought it worth mentioning.
+
 export function useAddress() {
   const { address } = useContext(context);
   return address;
